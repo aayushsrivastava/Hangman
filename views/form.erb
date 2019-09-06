@@ -1,0 +1,19 @@
+<a href="/help">Help</a>
+<a href="https://github.com/aayushsrivastava/">Github</a>
+
+<h2>Hangman</h2>
+<form action="/new" method="get">
+	<input type="submit" value="New Game">
+</form>
+
+<pre><code>
+<% game_progress.each do |line| %>
+ <%= line %>
+<% end %>
+</code></pre>
+
+<form action="/" method="post">
+	<label for="guess-input">Enter letter: </label>
+	<input type="text" name="guess" id="guess-input">
+	<input type="submit" value="Guess">
+</form>
