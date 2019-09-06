@@ -19,7 +19,6 @@ end
 
 get "/new" do
   session.delete(:state)
-  game.load
   redirect "/"
 end
 
