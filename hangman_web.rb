@@ -12,6 +12,7 @@ get "/" do
 end
 
 post "/" do
+  game.load(session[:state])
   game.play(params[:guess])
   session[:state] = game.state
   redirect "/"
